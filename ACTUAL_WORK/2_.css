@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.container1{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(207, 174, 203);
+    animation: bg 1s forwards;
+    animation-delay: 7s;
+}
+@keyframes bg{
+    from{
+        background: rgb(207, 174, 203);
+    }
+    to{
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+
+#box1{
+    height: 250px;
+    width: 200px;
+    top: 50px;
+    left: 375px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: man1 2s ease-in 1s forwards;
+    position: absolute;
+    animation-delay: 1s;
+    background-image: url("pappa.jpg");
+}
+@keyframes man1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#box2{
+    height: 250px;
+    width: 200px;
+    top: 50px;
+    right: 370px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: woman1 2s ease-in 1s forwards;
+    position: absolute;
+    animation-delay: 1s;
+    background-image: url("mamma.jpg");
+}
+
+@keyframes woman1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#box3{
+    position:absolute;
+    background: url(balak.jpg);
+    height: 250px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 380px;
+    left: 575px;
+    opacity:0;
+    animation: box3 2s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes box3{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.para{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 200;
+    color: white;
+
+}
+
+#para2{
+    position:absolute;
+    top :310px;
+    left: 445px ;
+    opacity: 0;
+    animation:para2 2s forwards;
+    animation-delay: 3s;
+}
+@keyframes para2{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+#para1{
+    position: absolute;
+    top :310px;
+    right: 450px;
+    opacity: 0;
+    animation:para1 2s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes para1{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+.arrow{
+    position:absolute;
+    top: 230px;
+    left: 640px;
+    font-size: 100px;
+    opacity: 0;
+    animation: arrow 2s forwards;
+    animation-delay: 4s;
+}
+
+@keyframes arrow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#para3{
+    position: absolute;
+    top: 550px;
+    left: 635px;
+    opacity: 0;
+    animation: para3 2s forwards;
+    animation-delay: 6s;
+}
+
+@keyframes para3 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bust{
+    font-size: 80px;
+    opacity: 0;
+    animation: bust 1s forwards;
+    animation-delay:7s;
+}
+
+
+#bust1{
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    opacity: 0;
+    animation: bust1 1s forwards;
+    animation-delay:7s;
+}
+
+@keyframes bust1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#bust2{
+    position: absolute;
+    top: 500px;
+    right: 50px;
+    rotate: -90deg;
+    opacity: 0;
+    animation: bust2 1s forwards;
+    animation-delay:7s;
+}
+@keyframes bust2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#bust3{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    opacity: 0;
+    animation: bust3 1s forwards;
+    animation-delay:7s;
+}
+
+@keyframes bust3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#bust4{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    opacity: 0;
+    animation: bust4 1s forwards;
+    animation-delay:7s;
+}
+
+@keyframes bust4{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.sparkle {
+position: absolute;
+width: 4px;
+height: 4px;
+background: rgb(250, 248, 248);
+border-radius: 50%;
+opacity: 0;
+animation: twinkle 2s infinite ease-in-out;
+animation-delay: 7s;
+}
+
+@keyframes twinkle {
+0%, 100% { opacity: 0; transform: scale(0.5); }
+50% { opacity: 1; transform: scale(1.2); }
+}
+
+#button{
+position: absolute;
+width: 5vw;
+height: 5vh;
+top: 600px;
+left: 635px;
+background-color: white;
+opacity: 0;
+animation:button 2s forwards;
+animation-delay: 9s ;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+@keyframes button {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
